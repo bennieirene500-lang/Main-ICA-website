@@ -687,6 +687,7 @@
                     Tool Lab
                 </p>
                 <button type="button" data-view="tools" style="border:0;border-left:3px solid transparent;background:transparent;color:#fff;text-align:left;padding:9px 12px;cursor:pointer;font-size:13px">Try The Strategist Machine</button>
+                <button type="button" data-view="trustlens" style="border:0;border-left:3px solid transparent;background:transparent;color:#fff;text-align:left;padding:9px 12px;cursor:pointer;font-size:13px">Trust Lens App</button>
                 <details class="ica-tool-menu">
                     <summary>New tools coming</summary>
                     <ul class="ica-tool-menu-list">
@@ -780,6 +781,16 @@
                     <div class="ica-tool-frame-shell">
                         <iframe class="ica-tool-frame" title="ICA TikTok Strategist public experience" data-strategist-frame data-src="https://wondrous-chimera-560f4a.netlify.app/" loading="lazy" allow="clipboard-write"></iframe>
                     </div>
+                </div>
+            </section>
+            <section data-page="trustlens" hidden class="ica-tool-page">
+                <div style="margin:0 0 18px">
+                    <p class="ica-tool-kicker">ICA TOOL LAB</p>
+                    <h2 class="ica-tool-title" style="font-size:clamp(30px,4.5vw,48px)">Trust Lens</h2>
+                    <p class="ica-tool-copy" style="margin-bottom:0">Check an AI answer and see what deserves a second look before you trust it.</p>
+                </div>
+                <div class="ica-tool-frame-shell">
+                    <iframe class="ica-tool-frame" title="ICA Trust Lens App" data-trustlens-frame data-src="https://trustlens.idealclientalliance.com/" loading="lazy" allow="clipboard-write"></iframe>
                 </div>
             </section>
             <section data-page="hub" hidden style="max-width:760px;margin:0 auto">
@@ -1037,6 +1048,10 @@
             tools: {
                 title: 'ICA Tool Lab | Try the TikTok Strategist Machine',
                 description: 'Try the ICA TikTok Strategist for clearer content direction, practical scripts, calls to action, and next steps.'
+            },
+            trustlens: {
+                title: 'Trust Lens | ICA Tool Lab',
+                description: 'Use ICA Trust Lens to check AI answers and identify what deserves a second look before you trust or act on it.'
             }
         };
         const applyViewMeta = (view) => {
@@ -1065,6 +1080,11 @@
                 else
                     item.removeAttribute('aria-current');
             });
+            if (view === 'trustlens') {
+                const trustLensFrame = root.querySelector('[data-trustlens-frame]');
+                if (trustLensFrame && !trustLensFrame.src)
+                    trustLensFrame.src = trustLensFrame.dataset.src;
+            }
             applyViewMeta(view);
         }));
         homeButtons.forEach((homeButton) => homeButton.addEventListener('click', () => {

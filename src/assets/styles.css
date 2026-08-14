@@ -619,6 +619,16 @@ html {
         line-height: 1.6;
     }
 
+    .page-shell section p a {
+        color: #ed5b2d;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .page-shell section p a:hover {
+        text-decoration: underline;
+    }
+
     .page-cta-row {
         display: flex;
         flex-wrap: wrap;
@@ -908,4 +918,31 @@ html {
         margin: 16px 0 0;
         color: #8fa1a8;
         font-size: 11px;
+    }
+
+    .founder-photo {
+        max-width: 240px;
+        margin: 0 0 32px;
+    }
+
+    .founder-photo img {
+        display: block;
+        width: 100%;
+        border-radius: 14px;
+        background: #0a141d;
+    }
+
+    .founder-photo figcaption {
+        margin-top: 10px;
+    }
+
+    .founder-photo figcaption strong {
+        display: block;
+        color: #fff;
+        font-size: 15px;
+    }
+
+    .founder-photo figcaption span {
+        color: #98a8b1;
+        font-size: 13px;
     }

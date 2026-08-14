@@ -1,0 +1,11 @@
+<header class="site-header">
+    <a class="site-brand" href="/">
+        <span class="mark">ICA</span>
+        <strong>{{ site.name }}</strong>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+        {%- for item in site.nav %}
+        <a href="{{ item.url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a>
+        {%- endfor %}
+    </nav>
+</header>

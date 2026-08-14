@@ -29,7 +29,9 @@
     <link rel="stylesheet" href="/assets/styles.css">
 </head>
 <body>
+{% include "header.html" %}
 {{ content | safe }}
+{% include "footer.html" %}
     <a class="whatsapp-contact" href="https://wa.me/message/LA7HDP64RV4VH1" target="_blank" rel="noopener noreferrer" aria-label="Message Nathan Goldman on WhatsApp">Message Nathan on WhatsApp</a>
 </body>
 </html>

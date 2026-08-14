@@ -1,0 +1,10 @@
+{
+  "name": "Ideal Client Alliance",
+  "baseUrl": "https://idealclientalliance.com",
+  "nav": [
+    { "label": "Home", "url": "/" },
+    { "label": "Pricing", "url": "/pricing/" },
+    { "label": "Success Stories", "url": "/success-stories/" },
+    { "label": "Member Projects", "url": "/member-projects/" }
+  ]
+}

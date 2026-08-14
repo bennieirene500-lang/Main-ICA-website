@@ -5,6 +5,7 @@
     { "label": "Home", "url": "/" },
     { "label": "Pricing", "url": "/pricing/" },
     { "label": "Success Stories", "url": "/success-stories/" },
-    { "label": "Member Projects", "url": "/member-projects/" }
+    { "label": "Member Projects", "url": "/member-projects/" },
+    { "label": "About", "url": "/about/" }
   ]
 }

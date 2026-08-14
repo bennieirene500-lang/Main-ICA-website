@@ -1,0 +1,573 @@
+html {
+        background: #081117;
+    }
+
+    .whatsapp-contact {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        z-index: 20;
+        display: inline-flex;
+        align-items: center;
+        padding: 12px 15px;
+        border-radius: 999px;
+        background: #25d366;
+        color: #062313;
+        text-decoration: none;
+        font: 700 13px/1 Arial, sans-serif;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, .28);
+    }
+
+    .whatsapp-contact:hover {
+        filter: brightness(1.07);
+    }
+
+    @media (max-width: 640px) {
+        .whatsapp-contact {
+            right: 14px;
+            bottom: 14px;
+        }
+    }
+
+    #ica-flow-preview [data-page][hidden] {
+        display: none !important;
+    }
+
+    #ica-flow-preview main button[data-view], #ica-flow-preview main a[href * ="chat.whatsapp.com"], #ica-flow-preview main a[href * ="stan.store"] {
+        border: 1px solid rgba(237, 91, 45, .65) !important;
+        border-radius: 999px !important;
+        background: rgba(237, 91, 45, .1) !important;
+        color: #fff !important;
+        padding: 10px 14px !important;
+        font-weight: bold !important;
+        text-decoration: none !important;
+        box-shadow: none !important;
+    }
+
+    #ica-flow-preview main button[data-view]:hover, #ica-flow-preview main a[href * ="chat.whatsapp.com"]:hover, #ica-flow-preview main a[href * ="stan.store"]:hover {
+        background: rgba(237, 91, 45, .2) !important;
+    }
+
+    #ica-flow-preview article a[href * ="stan.store"] {
+        display: inline-block !important;
+        border: 1px solid currentColor !important;
+        border-radius: 6px !important;
+        background: transparent !important;
+        color: #ed5b2d !important;
+        padding: 8px 10px !important;
+        font-size: 13px !important;
+        font-weight: 700 !important;
+        box-shadow: none !important;
+    }
+
+    #ica-flow-preview article[data-tier="community"] a[href * ="stan.store"] {
+        color: #8fd9ad !important;
+    }
+
+    #ica-flow-preview article[data-tier="blueprint"] a[href * ="stan.store"] {
+        color: #ed5b2d !important;
+    }
+
+    #ica-flow-preview [data-page="hub"] > p:last-child {
+        color: #fff !important;
+    }
+
+    #ica-flow-preview .member-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 14px;
+    }
+
+    #ica-flow-preview .member-card {
+        border: 1px solid rgba(255, 255, 255, .15);
+        border-radius: 14px;
+        padding: 18px;
+        background: rgba(255, 255, 255, .035);
+    }
+
+    #ica-flow-preview .member-head {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 14px;
+    }
+
+    #ica-flow-preview .member-head img {
+        width: 42px;
+        height: 42px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 1px solid rgba(255, 255, 255, .25);
+    }
+
+    #ica-flow-preview .member-head strong {
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+
+    #ica-flow-preview .member-card blockquote {
+        margin: 0;
+        color: #e8edf0;
+        line-height: 1.55;
+        font-size: 14px;
+    }
+
+    #ica-flow-preview .people-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+    }
+
+    #ica-flow-preview .person-card {
+        min-height: 172px;
+        border: 1px solid rgba(255, 255, 255, .15);
+        border-radius: 14px;
+        padding: 18px;
+        background: rgba(255, 255, 255, .035);
+    }
+
+    #ica-flow-preview .person-top {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid rgba(255, 255, 255, .13);
+    }
+
+    #ica-flow-preview .person-card img {
+        width: 68px;
+        height: 68px;
+        object-fit: cover;
+        border-radius: 12px;
+        background: #162632;
+    }
+
+    #ica-flow-preview .person-card h3 {
+        margin: 0;
+        color: #ed5b2d;
+        font-size: 18px;
+        line-height: 1.15;
+    }
+
+    #ica-flow-preview .person-card p {
+        margin: 15px 0 0;
+        color: #d3dce1;
+        line-height: 1.55;
+        font-size: 14px;
+        max-width: 37ch;
+    }
+
+    @media (max-width: 1000px) {
+        #ica-flow-preview .member-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media (max-width: 700px) {
+        #ica-flow-preview {
+            grid-template-columns: minmax(0, 1fr) !important;
+        }
+
+        #ica-flow-preview > aside, #ica-flow-preview > main {
+            min-width: 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        #ica-flow-preview aside {
+            border-right: 0 !important;
+            border-bottom: 1px solid rgba(255, 255, 255, .12);
+        }
+
+        #ica-flow-preview [data-page="home"] {
+            grid-template-columns: 1fr !important;
+            gap: 24px !important;
+        }
+
+        #ica-flow-preview [data-page="home"] img {
+            max-width: 100% !important;
+            height: auto !important;
+        }
+
+        #ica-flow-preview [data-page="hub"] > p:last-child {
+            white-space: normal !important;
+        }
+
+        #ica-flow-preview .people-grid {
+            grid-template-columns: 1fr;
+        }
+    }/* Embedded preview portraits */
+
+    #ica-flow-preview .project-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+    }
+
+    #ica-flow-preview .project-card {
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, .15);
+        border-radius: 14px;
+        background: rgba(255, 255, 255, .035);
+    }
+
+    #ica-flow-preview .project-card img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 4/3;
+        object-fit: contain;
+        object-position: center;
+        background: #071017;
+    }
+
+    #ica-flow-preview .project-card video {
+        display: block;
+        width: 100%;
+        aspect-ratio: 4/3;
+        object-fit: contain;
+        object-position: center;
+        background: #071017;
+    }
+
+    #ica-flow-preview .project-video-preview {
+        display: grid;
+        place-items: center;
+        width: 100%;
+        aspect-ratio: 4/3;
+        background: linear-gradient(145deg, #172a36, #0b1218);
+    }
+
+    #ica-flow-preview .project-video-preview span {
+        display: grid;
+        place-items: center;
+        width: 48px;
+        height: 48px;
+        padding-left: 3px;
+        border-radius: 50%;
+        background: #ed5b2d;
+        color: #fff;
+    }
+
+    #ica-flow-preview .project-copy {
+        padding: 13px 15px 15px;
+    }
+
+    #ica-flow-preview .project-copy p {
+        margin: 0 0 5px;
+        color: #ed5b2d;
+        text-transform: uppercase;
+        font-size: 10px;
+        letter-spacing: 1px;
+        font-weight: bold;
+    }
+
+    #ica-flow-preview .project-copy h3 {
+        margin: 0;
+        font-size: 16px;
+        line-height: 1.2;
+    }
+
+    @media (max-width: 700px) {
+        #ica-flow-preview .project-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    #ica-flow-preview + .ica-footer {
+        padding: 30px clamp(22px, 5vw, 60px);
+        background: #081117;
+        color: #c5ced4;
+        border-top: 1px solid rgba(255, 255, 255, .12);
+        font-family: Arial, sans-serif;
+    }
+
+    #ica-flow-preview + .ica-footer .footer-inner {
+        max-width: 980px;
+        margin: 0 auto;
+    }
+
+    #ica-flow-preview + .ica-footer .footer-brand {
+        color: #fff;
+        font-weight: 700;
+        font-size: 14px;
+    }
+
+    #ica-flow-preview + .ica-footer .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 9px 18px;
+        margin: 16px 0;
+    }
+
+    #ica-flow-preview + .ica-footer summary {
+        color: #fff;
+        cursor: pointer;
+        font-size: 12px;
+        list-style: none;
+    }
+
+    #ica-flow-preview + .ica-footer summary::-webkit-details-marker {
+        display: none;
+    }
+
+    #ica-flow-preview + .ica-footer details p {
+        max-width: 760px;
+        margin: 10px 0 0;
+        font-size: 12px;
+        line-height: 1.55;
+        color: #bfcbd0;
+    }
+
+    #ica-flow-preview + .ica-footer .site-promo {
+        display: block;
+        margin-top: 24px;
+        padding: 13px 15px;
+        border: 1px solid rgba(237, 91, 45, .6);
+        border-radius: 10px;
+        color: #fff;
+        background: rgba(237, 91, 45, .08);
+        font-size: 14px;
+        text-decoration: none;
+        transition: background .2s ease, border-color .2s ease;
+    }
+
+    #ica-flow-preview + .ica-footer .site-promo:hover {
+        background: rgba(237, 91, 45, .15);
+        border-color: #ed5b2d;
+    }
+
+    #ica-flow-preview + .ica-footer .site-promo span {
+        color: #ed5b2d;
+        font-weight: 700;
+    }
+
+    #ica-flow-preview + .ica-footer .footer-note {
+        margin: 16px 0 0;
+        color: #8fa1a8;
+        font-size: 11px;
+    }/* ICA Pro card alignment */
+
+    #ica-flow-preview .ica-pricing-grid {
+        align-items: stretch;
+    }
+
+    #ica-flow-preview .ica-pricing-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #ica-flow-preview .ica-pricing-card > a[href * ="stan.store"] {
+        margin-top: auto !important;
+        align-self: flex-start;
+    }/* Tool Lab navigation */
+
+    #ica-flow-preview .ica-tool-menu {
+        margin: 2px 0 0 12px;
+        border-left: 1px solid rgba(255, 255, 255, .14);
+        padding-left: 12px;
+        color: #c5ced4;
+    }
+
+    #ica-flow-preview .ica-tool-menu summary {
+        cursor: pointer;
+        padding: 7px 0;
+        color: #b9c5cb;
+        font-size: 12px;
+        list-style: none;
+    }
+
+    #ica-flow-preview .ica-tool-menu summary::-webkit-details-marker {
+        display: none;
+    }
+
+    #ica-flow-preview .ica-tool-menu summary::before {
+        content: '＋';
+        display: inline-block;
+        width: 16px;
+        color: #ed5b2d;
+        font-weight: 700;
+    }
+
+    #ica-flow-preview .ica-tool-menu[open] summary::before {
+        content: '−';
+    }
+
+    #ica-flow-preview .ica-tool-menu-list {
+        display: grid;
+        gap: 7px;
+        margin: 2px 0 4px;
+        padding: 0 0 0 16px;
+        list-style: none;
+    }
+
+    #ica-flow-preview .ica-tool-menu-list li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+        color: #c5ced4;
+        font-size: 11px;
+        line-height: 1.35;
+    }
+
+    #ica-flow-preview .ica-tool-status {
+        flex: 0 0 auto;
+        border: 1px solid rgba(237, 91, 45, .38);
+        border-radius: 999px;
+        padding: 2px 6px;
+        color: #ed9a80;
+        font-size: 9px;
+        font-style: normal;
+        text-transform: uppercase;
+        letter-spacing: .6px;
+    }
+
+    #ica-flow-preview .ica-tool-status.is-open {
+        border-color: rgba(143, 217, 173, .45);
+        color: #8fd9ad;
+    }/* ICA Tool Lab: TikTok Strategist */
+
+    #ica-flow-preview .ica-tool-page {
+        width: 100%;
+        max-width: 1040px;
+        margin: 0 auto;
+    }
+
+    #ica-flow-preview .ica-tool-overview {
+        display: grid;
+        grid-template-columns: minmax(0, 1.08fr) minmax(280px, .92fr);
+        gap: clamp(24px, 5vw, 58px);
+        align-items: center;
+    }
+
+    #ica-flow-preview .ica-tool-kicker {
+        margin: 0 0 10px;
+        color: #ed5b2d;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+    }
+
+    #ica-flow-preview .ica-tool-title {
+        margin: 0;
+        max-width: 700px;
+        font-size: clamp(34px, 5vw, 56px);
+        line-height: 1.02;
+        letter-spacing: -2px;
+        color: #fff;
+    }
+
+    #ica-flow-preview .ica-tool-copy {
+        max-width: 620px;
+        margin: 18px 0 22px;
+        color: #d3dce1;
+        font-size: 17px;
+        line-height: 1.6;
+    }
+
+    #ica-flow-preview .ica-tool-badge {
+        display: inline-flex;
+        margin-bottom: 16px;
+        border: 1px solid rgba(255, 255, 255, .22);
+        border-radius: 999px;
+        padding: 7px 11px;
+        color: #e5ebee;
+        font-size: 12px;
+    }
+
+    #ica-flow-preview .ica-tool-launch {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        border: 1px solid #ed5b2d;
+        border-radius: 999px;
+        padding: 12px 17px;
+        background: #ed5b2d;
+        color: #081117;
+        font: 700 14px/1 Arial, sans-serif;
+        cursor: pointer;
+    }
+
+    #ica-flow-preview .ica-tool-note {
+        margin: 13px 0 0;
+        color: #98a8b1;
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    #ica-flow-preview .ica-tool-visual {
+        padding: 26px;
+        border: 1px solid rgba(255, 255, 255, .17);
+        border-radius: 20px;
+        background: radial-gradient(circle at 78% 18%, rgba(237, 91, 45, .24), transparent 30%), #101d27;
+    }
+
+    #ica-flow-preview .ica-tool-orbit {
+        display: grid;
+        place-items: center;
+        aspect-ratio: 1/.82;
+        border: 1px solid #40515b;
+        border-radius: 17px;
+        background: linear-gradient(135deg, #142a38, #0b151d);
+    }
+
+    #ica-flow-preview .ica-tool-core {
+        display: grid;
+        place-items: center;
+        width: 138px;
+        height: 138px;
+        border: 1px solid #ee805e;
+        border-radius: 50%;
+        background: #192a34;
+        color: #ed5b2d;
+        text-align: center;
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 1.1;
+        box-shadow: 0 0 0 18px rgba(237, 91, 45, .05), 0 0 0 36px rgba(237, 91, 45, .04);
+    }
+
+    #ica-flow-preview .ica-tool-features {
+        margin: 17px 0 0;
+        color: #c8d0d5;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    #ica-flow-preview .ica-tool-embed {
+        display: none;
+        width: 100%;
+    }
+
+    #ica-flow-preview .ica-tool-embed.is-open {
+        display: block;
+    }
+
+    #ica-flow-preview .ica-tool-frame-shell {
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, .15);
+        border-radius: 18px;
+        background: #081117;
+        box-shadow: 0 18px 50px rgba(0, 0, 0, .3);
+    }
+
+    #ica-flow-preview .ica-tool-frame {
+        display: block;
+        width: 100%;
+        height: max(820px, calc(100vh - 110px));
+        min-height: 820px;
+        border: 0;
+        background: #081117;
+    }
+
+    @media (max-width: 760px) {
+        #ica-flow-preview .ica-tool-overview {
+            grid-template-columns: 1fr;
+        }
+
+        #ica-flow-preview .ica-tool-frame {
+            height: 900px;
+            min-height: 900px;
+        }
+    }

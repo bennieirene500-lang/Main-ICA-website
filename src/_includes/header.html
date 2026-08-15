@@ -3,9 +3,23 @@
         <span class="mark">ICA</span>
         <strong>{{ site.name }}</strong>
     </a>
-    <nav class="site-nav" aria-label="Main">
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Main">
         {%- for item in site.nav %}
         <a href="{{ item.url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a>
         {%- endfor %}
     </nav>
 </header>
+<script>
+(() => {
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.getElementById('site-nav');
+    if (!toggle || !nav) return;
+    toggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('is-open');
+        toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+})();
+</script>

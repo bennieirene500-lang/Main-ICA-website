@@ -22,10 +22,26 @@ html {
         filter: brightness(1.07);
     }
 
+    .whatsapp-contact-icon {
+        display: none;
+    }
+
     @media (max-width: 640px) {
         .whatsapp-contact {
             right: 14px;
             bottom: 14px;
+            width: 52px;
+            height: 52px;
+            padding: 0;
+            justify-content: center;
+        }
+
+        .whatsapp-contact-icon {
+            display: block;
+        }
+
+        .whatsapp-contact-text {
+            display: none;
         }
     }
 
@@ -511,11 +527,33 @@ html {
 
     .site-header {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
         gap: 16px;
         padding: 18px clamp(22px, 5vw, 60px);
         border-bottom: 1px solid rgba(255, 255, 255, .12);
+    }
+
+    .nav-toggle {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        border: 0;
+        background: transparent;
+        cursor: pointer;
+    }
+
+    .nav-toggle span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        border-radius: 2px;
     }
 
     .site-header .site-brand {
@@ -568,9 +606,24 @@ html {
     }
 
     @media (max-width: 700px) {
-        .site-header {
+        .nav-toggle {
+            display: flex;
+        }
+
+        .site-nav {
+            display: none;
+            flex-basis: 100%;
             flex-direction: column;
-            align-items: flex-start;
+            gap: 2px;
+            margin-top: 4px;
+        }
+
+        .site-nav.is-open {
+            display: flex;
+        }
+
+        .site-nav a {
+            padding: 12px 14px;
         }
     }
 
@@ -863,6 +916,21 @@ html {
         color: #fff;
         font-weight: 700;
         font-size: 14px;
+    }
+
+    .site-footer .footer-contact {
+        margin: 10px 0 0;
+    }
+
+    .site-footer .footer-contact a {
+        color: #ed5b2d;
+        font-weight: 700;
+        font-size: 13px;
+        text-decoration: none;
+    }
+
+    .site-footer .footer-contact a:hover {
+        text-decoration: underline;
     }
 
     .site-footer .footer-links {

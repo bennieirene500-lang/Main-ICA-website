@@ -891,29 +891,6 @@ html {
         color: #bfcbd0;
     }
 
-    .site-footer .site-promo {
-        display: block;
-        margin-top: 24px;
-        padding: 13px 15px;
-        border: 1px solid rgba(237, 91, 45, .6);
-        border-radius: 10px;
-        color: #fff;
-        background: rgba(237, 91, 45, .08);
-        font-size: 14px;
-        text-decoration: none;
-        transition: background .2s ease, border-color .2s ease;
-    }
-
-    .site-footer .site-promo:hover {
-        background: rgba(237, 91, 45, .15);
-        border-color: #ed5b2d;
-    }
-
-    .site-footer .site-promo span {
-        color: #ed5b2d;
-        font-weight: 700;
-    }
-
     .site-footer .footer-note {
         margin: 16px 0 0;
         color: #8fa1a8;

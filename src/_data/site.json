@@ -3,6 +3,7 @@
   "baseUrl": "https://idealclientalliance.com",
   "nav": [
     { "label": "Home", "url": "/" },
+    { "label": "Free Brand Creator", "url": "/free-brand-creator/" },
     { "label": "Pricing", "url": "/pricing/" },
     { "label": "Success Stories", "url": "/success-stories/" },
     { "label": "Member Projects", "url": "/member-projects/" },
